@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Hausplan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <button id="loginBtn" class="icon" aria-label="Anmelden"></button>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="fabWrap" class="fab-wrap" hidden>
+    <div id="fabMenu" class="fab-menu" hidden>
+      <button data-add="plan">Neuer Plan</button>
+      <button data-add="news">Neuigkeit</button>
+      <button data-add="rule">Befehl</button>
+    </div>
+    <button id="fab" class="fab" aria-label="Hinzufügen">+</button>
+  </div>
+
+  <div id="saveBar" class="save-bar" hidden>
+    <button id="saveBtn">Speichern</button>
+  </div>
+
+  <dialog id="loginDlg">
+    <form method="dialog" id="loginForm">
+      <input type="password" id="tokenInput" placeholder="Passwort" autocomplete="off">
+      <button type="submit">Anmelden</button>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
